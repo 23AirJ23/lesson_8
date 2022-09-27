@@ -1,0 +1,395 @@
+/* Підключення шрифтів*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+   font-family: "Lato";
+   font-size: 16px;
+   color: #424551;
+   line-height: 160%;
+}
+
+
+.container {
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+main{
+   margin-bottom: 30px;
+}
+
+
+
+h1{
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   margin-bottom: 40px;
+}
+
+
+.main__text {
+   margin-bottom: 45px;
+}
+
+
+.main__list {
+   display: inline-block;
+   margin-bottom: 20px;
+}
+
+.list-item{
+   margin-left: 30px;
+}
+
+.list-item li{
+   line-height: 160%;
+}
+
+
+.list-item li:not(:last-child){
+   margin-bottom: 4px;
+}
+
+.list-item li::before{
+   background: url("../img/icons/check.svg") 0 3px no-repeat;
+   content: "";
+   margin-left: -30px;
+   padding-left: 30px;
+}
+
+
+
+.list-title{
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 150%;
+   color: #1E212C;
+   margin-bottom: 24px;
+}
+
+
+.main__curator {
+   margin-bottom: 45px;
+}
+
+.curator-title{
+   font-weight: 700;
+   line-height: 150%;
+   color: #1E212C;
+   margin-bottom: 8px;
+}
+
+.name {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   display: inline-block;
+   margin-bottom: 16px;
+}
+
+.curator-post{
+   font-size: 20px;
+   line-height: 150%;
+   color: #787A80;
+   margin-bottom: 32px;
+}
+
+
+.rcs {
+   display: inline-block;
+   font-weight: 700;
+   color: #424551;
+   margin-bottom: 32px;
+}
+
+.rcs p:first-child::before{
+   background: url("../img/icons/Star.svg") 0 0 no-repeat;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+}
+
+.rcs p:first-child:hover::before{
+   transition: 1s ease-in;
+   transform: rotate(360deg);
+}
+
+.rcs p:nth-child(2)::before{
+   background: url("../img/icons/Play.svg") 0 0 no-repeat;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+   transition: 1s ease-in;
+}
+
+.rcs p:nth-child(2):hover::before{
+   transition: 1s ease-in;
+   transform: scale(1.5, 1.5);
+}
+
+.rcs p:last-child::before{
+   background: url("../img/icons/Profile.svg") 0 0 no-repeat;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+   transition: 1s ease-in;
+}
+
+.rcs p:last-child:hover::before{
+   transition: 1s ease-in;
+   transform: translateX(-3px);
+}
+
+
+.icons{
+   max-height: 24px;
+   margin-bottom: 30px;
+}
+
+.icons a{
+   display: inline-block;
+   margin-right: 20px;
+   width: 24px;
+   height: 24px;
+   
+}
+
+.icons a:hover::before{
+   color: red;
+   box-shadow: 0 1px 3px 0 rgb(149, 135, 135);
+}
+
+
+/* Тести */
+
+.footer__container{
+   max-width: 800px;
+   max-height: 1000px;
+   margin: 0 auto 50px;
+   border: 2px solid #000;
+   background: url("../img/giraffe.jpg") 0 0 / contain no-repeat;
+}
+
+
+.first {
+   background-color: blue;
+   width: 50px;
+   height: 50px;
+   display: block;
+}
+
+.first::after {
+   background-color: blue;
+   width: 50px;
+   height: 90px;
+   visibility: hidden;
+   display: inline-block;
+}
+
+.footer__container .first:hover::after{
+   content: "";
+   background-color: blue;
+   width: 50px;
+   height: 90px;
+   display: inline-block;
+   visibility: visible;
+}
+
+.footer__container .first:hover + div{
+   visibility: visible;
+}
+
+
+.second {
+   background-color: blue;
+   width: 100%;
+   height: 40px;
+   visibility: hidden;
+}
+
+.footer__container .second:hover{
+   visibility: visible;
+}
+
+.footer__container .second:hover + div{
+   visibility: visible;
+}
+
+.third {
+   background-color: blue;
+   width: 30px;
+   height: 200px;
+   float: right;
+   visibility: hidden;
+}
+
+.footer__container .third:hover{
+   visibility: visible;
+}
+
+.footer__container .third:hover + div{
+   visibility: visible;
+}
+
+
+.fourth{
+   background-color: blue;
+   width: 760px;
+   height: 20px;
+   float: right;
+   margin-top: 180px;
+   visibility: hidden;
+}
+
+.footer__container .fourth:hover{
+   visibility: visible;
+}
+
+.footer__container .fourth:hover + div{
+   visibility: visible;
+}
+
+
+
+.fifth{
+   background-color: blue;
+   width: 10px;
+   height: 170px;
+   margin-top: 180px;
+   visibility: hidden;
+}
+
+.footer__container .fifth:hover{
+   visibility: visible;
+}
+
+.footer__container .fifth:hover + div{
+   visibility: visible;
+}
+
+.sixth{
+   background-color: red;
+   width: 10px;
+   height: 10px;
+   visibility: hidden;
+}
+
+.footer__container .sixth:hover{
+   visibility: visible;
+}
+
+.footer__container .sixth:hover + div{
+   visibility: visible;
+}
+
+
+.picture{
+   visibility: hidden;
+}
+
+.footer__container .picture:hover{
+   visibility: visible;
+}
+
+.picture img{
+   max-width: 100%; 
+}
+
+
+.slider {
+   max-width: 500px;
+   margin: 0 auto;
+   min-height: 300px
+}
+
+.slider a{
+   display: inline-block;
+   width: 100px;
+   height: 50px;
+   background-color: rgb(231, 17, 17);
+   text-align: center;
+}
+
+.slider a:nth-child(odd){
+   background-color: rgb(224, 116, 27);
+}
+
+.slider a:nth-child(even){
+   color: #fff;
+}
+
+
+
+
+
+
+.slider div{
+   border: 1px solid #000;
+   background-color: rgb(165, 240, 54);
+   display: none;
+}
+
+.slider div:first-of-type{
+   font-size: 25px;
+}
+
+.slider div:last-child{
+   color: rgb(220, 25, 155);
+}
+
+.slider div:target{
+   display: block;
+}
+
+
+
+
+
+
+.links a{
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   padding-top: 10px;
+   background: rgb(6, 4, 4);
+   border-radius: 50%;
+   text-align: center;
+   color: #fff;
+   transition: 0.5s ease-in;
+}
+
+.links a:hover{
+   background: rgba(252, 249, 249, 0.194);
+   color: rgb(4, 2, 2);
+   transition: all 0.5s ease-in;
+   transform: rotate(360deg);
+}
+
+.links a:focus{
+   width: 50px;
+   height: 50px;
+   background: rgb(6, 4, 4);
+   color: #fff;
+   line-height: 100%;
+   border: 2px solid red;
+   font-size: 14px;
+   transition: all 0.5s ease-in;
+   transform: scale(2,2);
+}
+
+
+
+
+
+
+
